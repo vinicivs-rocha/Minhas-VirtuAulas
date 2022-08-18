@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Minhas-VirtuAulas/static/css/main.3dbb901d.css",
+    "main.js": "/Minhas-VirtuAulas/static/js/main.d1f5522a.js",
+    "static/js/787.c0109a3b.chunk.js": "/Minhas-VirtuAulas/static/js/787.c0109a3b.chunk.js",
+    "index.html": "/Minhas-VirtuAulas/index.html",
+    "main.3dbb901d.css.map": "/Minhas-VirtuAulas/static/css/main.3dbb901d.css.map",
+    "main.d1f5522a.js.map": "/Minhas-VirtuAulas/static/js/main.d1f5522a.js.map",
+    "787.c0109a3b.chunk.js.map": "/Minhas-VirtuAulas/static/js/787.c0109a3b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3dbb901d.css",
+    "static/js/main.d1f5522a.js"
+  ]
+}
