@@ -1,0 +1,132 @@
+.costumer-feedbacks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2em;
+    margin-top: 2em;
+}
+
+.costumer-feedbacks .header h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: end;
+}
+
+.costumer-feedbacks .header > img {
+    width: 100px;
+    position: absolute;
+    transform: translate(-20px, -50px);
+}
+
+.costumer-feedbacks a {
+    margin-top: 2em;
+}
+
+.costumer-feedbacks button {
+    max-width: 250px;
+    margin: 0;
+}
+
+.feedbacks {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2em;
+    margin-top: 2em;
+}
+
+.feedback-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: var(--card-shadow);
+    transition: var(--card-shadow-trasition);
+    max-width: 550px;
+}
+
+.feedback-card header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-card header > img:nth-child(1) {
+    width: 100px;
+}
+
+.feedback-card header > img:nth-child(2) {
+    height: 50px;
+}
+
+.feedback-card p {
+    color: var(--text-dark-gray);
+    font-size: .9em;
+    margin: 1.5em 0;
+}
+
+.feedback-card span {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .costumer-feedbacks .header > img {
+        width: 150px;
+        transform: translate(-40px, -80px);
+    }
+    .costumer-feedbacks .header > h2 {
+        margin-left: 2em;
+        text-align: start;
+        font-size: 3em;
+    }
+    .feedbacks {
+        margin-top: 3em;
+    }
+    .feedbacks > .feedback-card {
+        padding: 2em;
+        margin: auto;
+    }
+    .costumer-feedbacks a > button {
+        padding: .9em;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1440px) {
+    .good-statistics > h3 {
+        font-size: 3em;
+    }
+    .costumer-feedbacks {
+        margin-top: 4em;
+        width: 100%;
+    }
+    .costumer-feedbacks > .header {
+        width: 70%;
+    }
+    .costumer-feedbacks > .header > img {
+        width: 200px;
+        transform: translate(-100px, -100px);
+    }
+    .costumer-feedbacks > .header > h2 {
+        margin-left: 0;
+        font-size: 4em;
+        text-align: center;
+    }
+    .costumer-feedbacks > .feedbacks {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2em;
+    }
+    .costumer-feedbacks .feedbacks > .feedback-card {
+        box-shadow: none;
+        transition: var(--card-shadow-trasition);
+    }
+    .costumer-feedbacks .feedbacks > .feedback-card:hover {
+        box-shadow: var(--card-shadow);
+    }
+    .costumer-feedbacks a {
+        margin-top: 4em;
+    }
+}
+

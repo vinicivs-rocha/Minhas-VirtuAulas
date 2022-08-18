@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import Head from './components/head/Head'
+import Statistics from './components/statistics/Statistics'
+import Feedbacks from './components/feedbacks/Feedbacks'
+import Content from './components/content/Content'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <>
+            <Head />
+            <Statistics />
+            <Feedbacks />
+            <Content />
+        </>
+    )
 }
 
-export default App;
+export default App
+
